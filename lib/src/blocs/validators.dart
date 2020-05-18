@@ -1,7 +1,7 @@
 import 'dart:async';
 
 class Validators {
-  final valildateEmail = StreamTransformer<String, String>.fromHandlers(
+  final validateEmail = StreamTransformer<String, String>.fromHandlers(
     handleData: (email, sink) {
       if (email.contains('@')) {
         sink.add(email);
